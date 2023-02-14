@@ -38,7 +38,6 @@ export class BasicosComponent implements OnInit {
       this.miFormulario.markAllAsTouched();
       return;
     }
-    console.log(this.miFormulario.value)
     this.miFormulario.reset();
 
   }

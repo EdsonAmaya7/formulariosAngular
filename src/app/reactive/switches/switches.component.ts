@@ -32,14 +32,13 @@ export class SwitchesComponent implements OnInit {
     // })
     // subscribirse a los cambios del formulario de un campo
     this.miFormulario.get('condiciones')?.valueChanges.subscribe(newValue => {
-      console.log('newValue', newValue)
+      // console.log('newValue', newValue)
     })
 
     // subscribirse a los cambios del formulario
     // extrae condiciones como una variable independiente
     // y guarda el rest
     this.miFormulario.valueChanges.subscribe(({ condiciones, ...rest }) => {
-      console.log('rest', rest)
       this.persona = rest
     })
   }
